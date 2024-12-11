@@ -151,7 +151,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     );
 
     let mut queued_proof_duration_millis = 0;
-    let mut queued_steps_proven: i32 = 0;
+    let mut queued_steps_proven: i32 = 1000000000;
     let mut timer_since_last_orchestrator_update = Instant::now();
 
     println!(
